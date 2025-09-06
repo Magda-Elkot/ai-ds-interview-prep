@@ -38,8 +38,7 @@ RUN pip install torch torchvision
 COPY . /app
 CMD ["python", "train.py"]
 
-
----
+```
 
 ## 4. Docker Hub
 
