@@ -94,7 +94,8 @@ Docker is like a **magic box** that guarantees your AI code will run anywhere, e
 
 - Containers are **ephemeral** — data is lost when removed.  
 - Use **volumes** to persist data.  
-- Volumes mount a host directory (or dedicated storage) into the container → keeps data like DB files or checkpoints safe even if the container stops.  
+- A volume is a dedicated storage space that lives outside the container on the host machine.
+- It is mounted into the container, keeping data safe even if the container is stopped or deleted.git 
 
 ---
 
