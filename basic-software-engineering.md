@@ -31,3 +31,40 @@
 
  **In short:**  
 `URL → DNS → Connect → Request → Response → Render`
+
+
+## 2. __init__.py 
+**Special file in Python**
+
+- Marks a **directory as a Python package**.  
+- Can be empty, but often used to **initialize package-level variables, imports, or configurations**.  
+- Example:
+
+```python
+# mypackage/__init__.py
+print("mypackage initialized")
+
+# Could also expose key functions/classes
+from .module1 import func1
+from .module2 import ClassA
+```
+
+
+##  3. MVC Architecture  
+**MVC (Model–View–Controller)** 
+is a software design pattern used to **separate concerns** in applications.  
+
+### Model  
+- Manages the **data and business logic**.  
+- Example: database queries, data validation, rules.  
+
+### View  
+- Handles the **UI (User Interface)**.  
+- Example: HTML templates, rendering data to users.  
+
+### Controller  
+- Connects the **Model and View**.  
+- Responsibilities:  
+  - Receives user input (e.g., HTTP requests).  
+  - Updates the Model.  
+  - Chooses the correct View to render.  
